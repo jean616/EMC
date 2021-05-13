@@ -13,6 +13,10 @@ class PedidoController extends Controller
         $usario ->Nombre_Producto = $dato["Nombre_Producto"];
         $usario ->Id_usuario = $dato["Id_usuario"];
         $usario -> save();
-        return  "Se guardo";/*redirect("")*/;
+        return redirect("Realizar_pedido");
+    }
+    public  function mostrar(){
+        $resultados = Pedido::all();
+        return  view("Mostrar_pedido",["resultados"=>$resultados]);
     }
 }

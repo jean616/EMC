@@ -21,8 +21,8 @@
 <body style="background-color: chartreuse">
 
 <nav>
-    <a href="/ingresoUsuarios/1" >Ingresar Usuarios</a>
-    <a href="/MostrarUsuarios " >Mostrar Usuarios</a>
+    <a href="/Realizar_pedido/1" >Ingresar Pedido</a>
+    <a href="/Mostrar_Pedido " >Mostrar Pedido</a>
 </nav>
 <header>
     <h1>Control de expedientes</h1>

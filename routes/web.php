@@ -24,9 +24,9 @@ Route::view('/','welcome');
 Route::view("/Realizar_pedido","Hacerpedido");
 
 Route::get("/Realizar_pedido/{idcolumna}",function (int $idcolumna){
-    return view("Realizar_pedido")->with("idcolumna",$idcolumna);
+    return view("Hacerpedido")->with("idcolumna",$idcolumna);
 });
 
 Route::post("/ingresara_pedido",[PedidoController::class,"guardar"])->name("ingresara_pedido");
 
-Route::get("/Mostrar_pedido",[PedidoController::class,"mostrar"]);
+Route::get("/Mostrar_Pedido",[PedidoController::class,"mostrar"]);
